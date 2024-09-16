@@ -72,6 +72,8 @@ nav a:hover {
     border-radius: 5px;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    margin-right: 69px;
+    padding: 5px;
 }
 
 .login-button a:hover {
@@ -96,6 +98,7 @@ nav a:hover {
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
+    color: black;
 }
 
 .button {
@@ -279,4 +282,7 @@ nav a {
 nav a:hover {
     color: #ddd;
     transform: scale(1.1);
+}
+#hone{
+    background-color: #0056b3;
 }
