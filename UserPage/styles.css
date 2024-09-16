@@ -1,0 +1,185 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 60px;
+}
+
+h1 {
+    float: left;
+    margin: 0 20px;
+    font-size: 24px;
+}
+
+nav {
+    float: right;
+    width:100%;
+    background-color: #007bff;
+    gap:50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.social-links {
+    float: right;
+    margin-left: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    font-size: 18px;
+}
+
+.profile {
+    float: right;
+    width: 100%;
+    gap: 100px;
+    
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+main {
+    padding: 20px;
+}
+
+.profile-card {
+    float: left;
+    width: 30%;
+    height: 500px;
+}
+.profile-details{
+    float: right;
+    width: 60%;
+    height: 500px;
+}
+.profile-card, .profile-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+    .profile-card {
+      width: 100%; 
+    }
+  
+    .profile-details {
+      width: 100%; 
+    }
+  }
+
+.profile-card {
+    
+    flex: 0 0 30%; /* Changed to flex-grow: 0, flex-shrink: 0, flex-basis: 30% */
+}
+
+.profile-details {
+    flex: 1; /* Takes up the remaining space */
+}
+
+.contact-section, .work-section, .education-section, .summary-section, .basic-section, .network-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+p, ul {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button.edit-button, button.add-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
