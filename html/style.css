@@ -82,23 +82,48 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url("hero-background.jpg");
+    /* background-image: linear-gradient(45deg, #bb0000, transparent); */
+    background-image: url(background2.png);
     background-size: cover;
     background-position: center;
     color: #fff;
     padding: 100px 0;
     text-align: center;
+    animation: change 60s infinite ease-in-out;
+}
+@keyframes change {
+    0% {
+        background-image: url(background2.png);
+    }
+    20%{
+        background-image: url(background1.jpg);
+    }
+    40%{
+        background-image: url(background3.png);
+    }
+    60%{
+        background-image: url(background4.png);
+    }
+    80%{
+        background-image: url(background5.png);
+    }
+    100%{
+        background-image: url(background6.png);
+    }
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
 }
+#about{
+    color: white;
+}
 
 .hero p {
     font-size: 1.2rem;
     margin-bottom: 30px;
-    color: black;
+    color: rgb(210, 210, 210);
 }
 
 .button {
@@ -116,6 +141,7 @@ nav a:hover {
 
 /* About Section */
 .about {
+    background-image: linear-gradient(45deg, black, #3bde1c80);
     padding: 50px 0;
 }
 
