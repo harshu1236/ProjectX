@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Alumni Community</h1>
+            <input type="text" id="searchInput" placeholder="Enter Keyword..." onkeyup="searchProfiles()">
+        </div>
+    </header>
+
+    <div class="container">
+        <aside>
+            <h2>Filters</h2>
+            <div class="filter">
+                <label for="institute">Institute/Faculty:</label>
+                <select id="instituteFilter" onchange="applyFilters()">
+                    <option value="">All</option>
+                    <option value="Management Studies">Management Studies</option>
+                    <option value="Law">Law</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="filter">
+                <label for="year">Year of Joining:</label>
+                <select id="yearFilter" onchange="applyFilters()">
+                    <option value="">All</option>
+                    <option value="2009">2009</option>
+                    <option value="2023">2023</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+            <div class="filter">
+                <label for="subject">Subject:</label>
+                <select id="subjectFilter" onchange="applyFilters()">
+                    <option value="">All</option>
+                    <option value="MBA">MBA</option>
+                    <option value="LAW">LAW</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+        </aside>
+
+        <main>
+            <h2>58797 Members in the Community</h2>
+            <div class="profiles" id="profileList">
+                <!-- Example Profiles -->
+                <div class="profile-card" data-institute="Management Studies" data-year="2009" data-subject="MBA">
+                    <img src="profile1.jpg" alt="Dr Manoj Srivastava">
+                    <h3>Dr Manoj Srivastava</h3>
+                    <p>Class of 2009</p>
+                    <p>MBA, Management Studies</p>
+                    <button>View More</button>
+                </div>
+                <div class="profile-card" data-institute="Law" data-year="2023" data-subject="LAW">
+                    <img src="profile2.jpg" alt="A Yadav">
+                    <h3>A Yadav</h3>
+                    <p>Class of 2023</p>
+                    <p>LLB, LAW</p>
+                    <button>View More</button>
+                </div>
+                <!-- Add more profiles dynamically -->
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
